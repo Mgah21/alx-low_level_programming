@@ -30,7 +30,7 @@ _putchar(' ');
 _putchar('0' + rep / 10);
 _putchar('0' + rep % 10);
 }
-else 
+else
 {
 _putchar('0' + rep / 100);
 _putchar('0' + (rep - 100) / 10);
