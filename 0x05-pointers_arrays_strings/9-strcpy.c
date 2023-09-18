@@ -16,10 +16,7 @@ int x = 0;
 while (src[l] != '\0')
 {
 l++;
-}
-for (; x < 1; x++)
-{
-dest[x] = src[x];
+dest[l] = src[l];
 }
 dest[l] = '\0';
 return (dest);
