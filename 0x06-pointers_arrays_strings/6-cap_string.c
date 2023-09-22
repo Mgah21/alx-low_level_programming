@@ -32,7 +32,7 @@ str[i - 1] == '"' || str[i - 1] ==
 '(' || str[i - 1] == ')' ||
 str[i - 1] == '{' || str[i - 1] == '}')
 {
-str[i] = toupper(str[i]);
+str[i] -= ('a' - 'A');
 }
 }
 
