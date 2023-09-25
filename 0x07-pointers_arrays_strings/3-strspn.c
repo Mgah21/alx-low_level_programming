@@ -20,7 +20,8 @@ if (*(s - 1) == *(accept - 1))
 u++;
 break;
 }
-if (!(*--accept
+if (!(*--accept))
+
 break;
 accept = t;
 }
