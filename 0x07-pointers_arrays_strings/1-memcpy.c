@@ -1,14 +1,13 @@
 #include "main.h"
 
 /**
- * copy_string - copy a string from one array to another
- * @dest: pointer to the destination array
- * @src: pointer to the source array
- * @n: the number of characters to copy
- * Return: a pointer to the destination array
+ * _memcpy - irontnoux2
+ * @dest: pointer to char params
+ * @src: pointer to char params
+ * @n: size
+ * Return: *dest
  */
-
-char *copy_string(char *dest, char *src, unsigned int n)
+char *_memcpy(char *dest, char *src, unsigned int n)
 {
 unsigned int u;
 
