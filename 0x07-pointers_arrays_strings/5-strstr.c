@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stddef.h>
 
 /**
  * _strstr - finds the first occurrence of a substring in a string
@@ -31,5 +30,5 @@ return (haystack);
 haystack++;
 }
 
-return (NULL);
+return (0);
 }
