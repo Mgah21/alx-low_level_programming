@@ -1,0 +1,30 @@
+#include "main.h"
+
+/**
+ * wildcmp - Compare strings
+ * @u: pointer to string params
+ * @v: pointer to string params
+ * Return: 0
+ */
+
+int wildcmp(char *u, char *v)
+{
+if (*u == '\0')
+{
+if (*v != '\0' && *v == '*')
+{
+return (wildcmp(u, v + 1));
+}
+return (*v == '\0');
+}
+
+if (*v == '*')
+{
+return (wildcmp(u + 1, v) || wildcmp(u, v + 1));
+}
+else if (*u == *v)
+{
+return (wildcmp(u + 1, v + 1));
+}
+return (0);
+}
