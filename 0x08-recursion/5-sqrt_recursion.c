@@ -12,13 +12,13 @@ if (n == 0 || n == 1)
 {
 return (n);
 }
-else
-{
+
 int start = 1;
 int end = n;
-while (start <= end)
-{
 int mid = (start + end) / 2;
+
+while (start < end)
+{
 if (mid * mid == n)
 {
 return (mid);
@@ -31,7 +31,9 @@ else
 {
 end = mid - 1;
 }
+
+mid = (start + end) / 2;
 }
+
 return (-1);
-}
 }
