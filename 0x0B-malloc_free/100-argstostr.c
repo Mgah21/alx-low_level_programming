@@ -24,7 +24,7 @@ y++;
 t++;
 }
 cou = cou + ac + 1;
-str = malloc(sizeof(char) * count);
+str = malloc(sizeof(char) * cou);
 if (str == NULL)
 {
 return (NULL);
