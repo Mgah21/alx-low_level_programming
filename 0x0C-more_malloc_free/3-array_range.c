@@ -1,0 +1,22 @@
+#include "main.h"
+
+/**
+ * array_range - create the array of integer numbers
+ * @min: minimum
+ * @max: maximum
+ * Return: array
+ */
+int *array_range(int min, int max)
+{
+int *a, x = 0, y = min;
+
+if (min > max)
+return (0);
+a = malloc((max - min + 1) * sizeof(int));
+
+if (!a)
+return (0);
+while (x <= max - min)
+a[x++] = y++;
+return (a);
+}
