@@ -19,7 +19,7 @@ op_t ops[] = {
 {"%", op_mod},
 {NULL, NULL}
 };
-int i = 0;
+int g = 0;
 
 while (ops[g].op)
 {
