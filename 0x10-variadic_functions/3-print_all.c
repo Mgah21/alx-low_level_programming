@@ -70,7 +70,7 @@ while (j < 4)
 	{
 	if (*printType[j].type == format[h])
 	{
-	printf("%s", sep);
+	printf("%s", s);
 	printType[j].printer(list);
 	s = ", ";
 	break;
