@@ -1,0 +1,38 @@
+#include "lists.h"
+#include <stdio.h>
+/**
+ * free_listint_safe - provide link list 
+ * @h: indcate pointer the first linklist
+ *
+ * Return: return zero
+ */
+size_t free_listint_safe(listint_t **h)
+{
+	size_t l = 0;
+	int d;
+	listint_t *te;
+
+	if (!h || !*h)
+		return (0);
+
+	while (*h)
+	{
+		d = *h - (*h)->next;
+		if (d > 0)
+		{
+			te = (*h)->next;
+			*h = te;
+			l++;
+		}
+		else
+		{
+			*h = NULL;
+			l++;
+			break;
+		}
+	}
+
+	*h = NULL;
+
+	return (l);
+}
