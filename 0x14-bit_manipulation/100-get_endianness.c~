@@ -1,0 +1,13 @@
+#include "main.h"
+
+/**
+ * get_endianness -Machine check
+ * Return: 0 
+ */
+int get_endianness(void)
+{
+	unsigned int n = 1;
+	char *m = (char *) &n;
+
+	return (*m);
+}
