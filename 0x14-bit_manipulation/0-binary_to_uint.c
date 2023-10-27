@@ -1,4 +1,4 @@
-#include "bit.h"
+#include "main.h"
 
 /**
  * binary_to_uint - this function uses the translation binary to unsigned
