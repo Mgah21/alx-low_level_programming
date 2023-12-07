@@ -3,7 +3,7 @@
 
 /**
  * print_dlistint - print list
- * @h: pointer to the start 
+ * @h: pointer to the start
  *
  * Return: num
  */

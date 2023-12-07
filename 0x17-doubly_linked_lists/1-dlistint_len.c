@@ -2,7 +2,7 @@
 
 /**
  * dlistint_len - dlistint
- * @h: start 
+ * @h: start
  *
  * Return: number of nodes
  */
