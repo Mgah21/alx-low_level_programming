@@ -6,7 +6,7 @@
  * @head: head
  * @n: num
  *
- * Return: pointer 
+ * Return: pointer
  */
 dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 {
